@@ -4,49 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Portfolio</title>
-  <style>
-    body {
-      background: #0D0D0D;
-      color: #FFFFFF;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card {
-      background: rgba(25,25,25,0.92);
-      padding: 2em 3em;
-      border-radius: 16px;
-      box-shadow: 0 0 24px #00FF85a0;
-      text-align: center;
-      min-width: 320px;
-    }
-    h1 {
-      color: #00FF85;
-      text-shadow: 0 0 10px #1E90FF;
-      margin-bottom: 0.7em;
-    }
-    p {
-      color: #B0B0B0;
-      font-size: 1.15em;
-    }
-    .accent {
-      color: #FF0099;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h1>Welcome to My Portfolio!</h1>
-    <p class="accent">This is a test page.</p>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cheatsheets.html">Cheatsheets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p class="accent">Modern, dark & neon themed developer site.</p>
     <p>
-      Your site is running on GitHub Pages.<br>
-      Next: Add more pages, sections, and style!
+      Navigate below to check out my skills, projects, cheatsheets, and more.<br>
+      Start exploring each section from the menu above!
     </p>
+    
+    <h2>Quick Overview</h2>
+    <ul class="skills-list">
+      <li><strong>Skills:</strong> HTML, CSS, JavaScript, DevOps, Cloud (etc.)</li>
+      <li><strong>Projects:</strong> Showcasing apps, demos, and case studies</li>
+      <li><strong>Cheatsheets:</strong> Fast reference guides for key web topics</li>
+      <li><strong>About:</strong> My background, interests, and profile</li>
+      <li><strong>Contact:</strong> Connect via email or socials</li>
+      <li><strong>Blog:</strong> (Optional) My thoughts, tutorials, and code tips</li>
+      <li><strong>Resume:</strong> Download my CV or view career journey</li>
+    </ul>
+
+    <div class="menu-quick-links">
+      Quick Links:&nbsp;
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="cheatsheets.html">Cheatsheets</a>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

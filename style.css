@@ -1,0 +1,90 @@
+body {
+  background: #0D0D0D;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+nav {
+  background: #111117;
+  box-shadow: 0 0 12px #00FF8550;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1em 0;
+}
+nav ul li {
+  margin: 0 1.3em;
+}
+nav ul li a {
+  color: #00FF85;
+  text-decoration: none;
+  font-size: 1.14em;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.3em 0.7em;
+  transition: color 0.22s, background 0.22s, box-shadow 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #FF0099;
+  background: #222;
+  box-shadow: 0 0 8px #1E90FF, 0 0 24px #FF009980;
+}
+.container {
+  max-width: 850px;
+  margin: 2em auto;
+  padding: 2em 2.5em;
+  background: rgba(25,25,25,0.92);
+  border-radius: 16px;
+  box-shadow: 0 0 24px #1E90FF33;
+  text-align: center;
+}
+h1 {
+  color: #00FF85;
+  text-shadow: 0 0 12px #1E90FF;
+  margin-bottom: 0.65em;
+  letter-spacing: 1px;
+}
+h2 {
+  color: #1E90FF;
+  margin-top: 1.5em;
+}
+.accent {
+  color: #FF0099;
+  font-weight: bold;
+}
+ul.skills-list {
+  list-style: none;
+  padding: 0;
+}
+ul.skills-list li {
+  margin: 0.8em 0;
+  color: #B0B0B0;
+  font-size: 1.08em;
+}
+.menu-quick-links {
+  margin-top: 2em;
+  text-align: center;
+}
+.menu-quick-links a {
+  color: #1E90FF;
+  text-decoration: underline dashed;
+  margin: 0 0.5em;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2em 0.5em;
+  }
+  nav ul li {
+    margin: 0 0.5em;
+  }
+  nav ul li a {
+    font-size: 1em;
+    padding: 0.18em 0.44em;
+  }
+}
