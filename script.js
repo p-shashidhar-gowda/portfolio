@@ -1,9 +1,9 @@
-// Neon hover effect for navigation links
+// Subtle blue glow on hover for navigation links in light mode
 document.querySelectorAll('nav ul li a').forEach(link => {
   link.addEventListener('mouseover', () => {
-    link.style.textShadow = "0 0 8px #FF0099, 0 0 16px #00FF85";
+    link.style.boxShadow = "0 2px 9px #60a5fadc";
   });
   link.addEventListener('mouseout', () => {
-    link.style.textShadow = "none";
+    link.style.boxShadow = "none";
   });
 });
