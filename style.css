@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
 }
 nav {
-  background: #ffffff;
+  background: #fff;
   border-bottom: 1.5px solid #eaeaea;
   box-shadow: 0 2px 14px #bbd1e66e;
 }
@@ -55,8 +55,28 @@ h2 {
   margin-top: 1.5em;
 }
 .accent {
-  color: #e11d48;  /* Rose-600 */
+  color: #e11d48;  /* rose-600 */
   font-weight: bold;
+}
+.contact-info {
+  margin: 2.5em auto 1.5em;
+  padding: 1.4em 1.1em;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 12px;
+  background: #fafdff;
+  color: #222935;
+  text-align: left;
+  max-width: 420px;
+  box-shadow: 0 2px 12px #cbd5e17d;
+}
+.contact-link {
+  color: #2563eb;
+  text-decoration: underline dotted;
+  transition: color 0.15s;
+}
+.contact-link:hover {
+  color: #e11d48;
+  text-decoration: underline solid;
 }
 ul.skills-list {
   list-style: none;
