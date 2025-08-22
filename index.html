@@ -1,88 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shashidhar Gowda P - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shashidhar Gowda P – Portfolio</title>
+  <link rel="stylesheet" href="./styles.css?v=1" />
 </head>
 <body>
-  <header>
-    <h1 id="title">Shashidhar Gowda P</h1>
-    <p class="subtitle"></p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <a href="Shashidhar_Gowda_Resume.pdf" target="_blank">Resume</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">SG</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-ghost" href="./Shashidhar_Gowda_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Cloud-focused engineer who enjoys turning messy deployments into clean, automated pipelines.
-      I build scalable, secure infra the boring, reliable way—so your app stays exciting for users, not on-call engineers.
-    </p>
-    <p><strong>CGPA:</strong> 7.54</p>
-  </section>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="title">Shashidhar Gowda P</h1>
+          <p class="subtitle" id="typed">Aspiring Azure Cloud & DevOps Engineer</p>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <a href="https://azure.microsoft.com" target="_blank" class="skill-box">Azure Cloud</a>
-      <a href="https://azure.microsoft.com/services/devops" target="_blank" class="skill-box">Azure DevOps</a>
-      <a href="https://git-scm.com/" target="_blank" class="skill-box">Git</a>
-      <a href="https://www.docker.com/" target="_blank" class="skill-box">Docker</a>
-      <a href="https://kubernetes.io/" target="_blank" class="skill-box">Kubernetes</a>
-      <a href="https://www.terraform.io/" target="_blank" class="skill-box">Terraform</a>
-      <a href="https://www.jenkins.io/" target="_blank" class="skill-box">Jenkins</a>
-      <a href="https://www.ansible.com/" target="_blank" class="skill-box">Ansible</a>
-      <a href="https://puppet.com/" target="_blank" class="skill-box">Puppet</a>
-      <a href="https://www.nagios.org/" target="_blank" class="skill-box">Nagios</a>
-      <a href="https://www.python.org/" target="_blank" class="skill-box">Python</a>
-      <a href="https://www.java.com/" target="_blank" class="skill-box">Java</a>
-      <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" class="skill-box">JavaScript</a>
-      <a href="https://yaml.org/" target="_blank" class="skill-box">YAML</a>
-      <a href="https://www.kernel.org/" target="_blank" class="skill-box">Linux</a>
-      <a href="#" class="skill-box">CI/CD Pipelines</a>
-      <a href="#" class="skill-box">Infrastructure as Code</a>
-      <a href="#" class="skill-box">Monitoring & Automation</a>
+          <ul class="facts">
+            <li>📍 Bangalore, India</li>
+            <li>🎓 CGPA: <strong>7.54</strong></li>
+            <li>✉️ <a href="mailto:shashidhar.gowda.p@outlook.com">shashidhar.gowda.p@outlook.com</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/shashidhar-gowda-p" target="_blank" rel="noopener">linkedin.com/in/shashidhar-gowda-p</a></li>
+            <li>📱 +91 9019884212</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="./Shashidhar_Gowda_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card highlight">
+            <h3>What I do</h3>
+            <p>I turn messy deployments into clean, automated pipelines. Scalable infra, secure defaults, boringly reliable ops—so your users stay happy and your on-call stays quiet.</p>
+          </div>
+          <div class="card highlight alt">
+            <h3>Looking for</h3>
+            <p>Cloud / DevOps roles where I can ship CI/CD, IaC, containerization, and monitoring that actually moves the needle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          Cloud-focused engineer with hands-on exposure to Azure & DevOps. Comfortable with CI/CD, containers, infrastructure as code, and pragmatic automation.
+          I prefer proven patterns over flashy hacks and value shipping reliable systems the right way.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS: clickable boxes -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Cloud & DevOps -->
+          <a class="skill" href="https://azure.microsoft.com/" target="_blank" rel="noopener">Azure Cloud</a>
+          <a class="skill" href="https://azure.microsoft.com/services/devops/" target="_blank" rel="noopener">Azure DevOps</a>
+          <a class="skill" href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a>
+          <a class="skill" href="https://docs.docker.com/" target="_blank" rel="noopener">Docker</a>
+          <a class="skill" href="https://kubernetes.io/docs/home/" target="_blank" rel="noopener">Kubernetes</a>
+          <a class="skill" href="https://developer.hashicorp.com/terraform/docs" target="_blank" rel="noopener">Terraform</a>
+          <a class="skill" href="https://www.jenkins.io/doc/" target="_blank" rel="noopener">Jenkins</a>
+          <a class="skill" href="https://docs.ansible.com/" target="_blank" rel="noopener">Ansible</a>
+          <a class="skill" href="https://www.puppet.com/docs" target="_blank" rel="noopener">Puppet</a>
+          <a class="skill" href="https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/toc.html" target="_blank" rel="noopener">Nagios</a>
+
+          <!-- Programming & Scripting -->
+          <a class="skill" href="https://docs.python.org/3/" target="_blank" rel="noopener">Python</a>
+          <a class="skill" href="https://docs.oracle.com/javase/tutorial/" target="_blank" rel="noopener">Java</a>
+          <a class="skill" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener">JavaScript</a>
+          <a class="skill" href="https://yaml.org/spec/" target="_blank" rel="noopener">YAML</a>
+          <a class="skill" href="https://www.kernel.org/doc/html/latest/" target="_blank" rel="noopener">Linux</a>
+
+          <!-- Other -->
+          <a class="skill" href="https://martinfowler.com/bliki/ContinuousDelivery.html" target="_blank" rel="noopener">CI/CD Pipelines</a>
+          <a class="skill" href="https://en.wikipedia.org/wiki/Infrastructure_as_code" target="_blank" rel="noopener">Infrastructure as Code</a>
+          <a class="skill" href="https://sre.google/sre-book/monitoring-distributed-systems/" target="_blank" rel="noopener">Monitoring & Automation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Scalable Web Hosting on IBM Cloud</h3>
+            <p>Auto-scaling + load balancing for high availability and performance, with policies to handle traffic spikes gracefully.</p>
+            <ul class="tags"><li>IBM Cloud</li><li>Auto-Scaling</li><li>Load Balancer</li><li>DevOps</li></ul>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="#" aria-label="Project repo">GitHub</a>
+              <a class="btn" href="#" aria-label="Live demo">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Traffic Sign Recognition (ML)</h3>
+            <p>Model for real-time traffic sign classification; improved robustness via preprocessing and augmentation.</p>
+            <ul class="tags"><li>Python</li><li>ML</li><li>CV</li></ul>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="#" aria-label="Project repo">GitHub</a>
+              <a class="btn" href="#" aria-label="Live demo">Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-header">
+              <h3>Azure Cloud & DevOps Intern — Intellipaat Software Solutions Pvt. Ltd.</h3>
+              <span class="t-time">Feb 2025 – Present</span>
+            </div>
+            <ul>
+              <li>Hands-on work across Azure Cloud and DevOps on real projects under expert guidance.</li>
+              <li>Designed and implemented scalable solutions with CI/CD pipelines and automation.</li>
+            </ul>
+          </div>
+
+          <div class="t-item">
+            <div class="t-header">
+              <h3>Cloud Application Developer Intern — IBM (with IIT Guwahati)</h3>
+              <span class="t-time">Nov 2024 – Mar 2025</span>
+            </div>
+            <ul>
+              <li>Built cloud-based applications leveraging IBM Cloud services.</li>
+              <li>Deployed scalable hosting with auto-scaling and load balancing for high availability.</li>
+            </ul>
+          </div>
+
+          <div class="t-item">
+            <div class="t-header">
+              <h3>Machine Learning Intern — Take It Smart Pvt. Ltd.</h3>
+              <span class="t-time">Oct 2023 – Nov 2023</span>
+            </div>
+            <ul>
+              <li>Applied ML concepts to build predictive models using Python.</li>
+              <li>Delivered responsive, user-friendly UI for interactive web apps.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="edu">
+          <div class="edu-item">
+            <h3>B.E. in Computer Science & Engineering</h3>
+            <p>CGPA: <strong>7.54</strong></p>
+          </div>
+          <div class="edu-item">
+            <h3>Bethel International Public School</h3>
+            <p>Percentage: <strong>76.67%</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul class="list">
+          <li>AZ-104 Microsoft Azure Administrator (via Intellipaat training)</li>
+          <li>Soft Skills (Life Skills 2.0) — Wadhwani & IIT Guwahati (2024)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section">
+      <div class="container">
+        <h2>Languages</h2>
+        <ul class="list">
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Kannada</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <a class="btn" href="mailto:shashidhar.gowda.p@outlook.com">Email Me</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shashidhar-gowda-p">LinkedIn</a>
+          <a class="btn btn-ghost" href="tel:+919019884212">Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Shashidhar Gowda P
     </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Azure Cloud & DevOps Intern - Intellipaat Software Solutions Pvt. Ltd.</h3>
-      <p class="period">Feb 2025 – Present</p>
-      <ul>
-        <li>Worked on real projects in Azure & DevOps under expert guidance</li>
-        <li>Built scalable solutions with CI/CD and automation</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Cloud Application Developer Intern - IBM (with IIT Guwahati)</h3>
-      <p class="period">2024</p>
-      <ul>
-        <li>Worked on scalable cloud applications using IBM Cloud services</li>
-        <li>Collaborated on deployments and monitoring solutions</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:shashidhar.gowda.p@outlook.com">shashidhar.gowda.p@outlook.com</a></p>
-    <p><strong>Phone:</strong> +91 9019884212</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shashidhar-gowda-p" target="_blank">linkedin.com/in/shashidhar-gowda-p</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Shashidhar Gowda P</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
 </html>
