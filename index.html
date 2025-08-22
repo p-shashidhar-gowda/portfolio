@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shashidhar Gowda Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashidhar Gowda P - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="cheatsheets.html">Cheatsheets</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="resume.html">Resume</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <p class="accent">Clean, modern & light-themed developer site.</p>
+  <header>
+    <h1 id="title">Shashidhar Gowda P</h1>
+    <p class="subtitle"></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="Shashidhar_Gowda_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
     <p>
-      Navigate below to check out my skills, projects, cheatsheets, and more.<br>
-      Start exploring each section from the menu above!
+      Cloud-focused engineer who enjoys turning messy deployments into clean, automated pipelines.
+      I build scalable, secure infra the boring, reliable way—so your app stays exciting for users, not on-call engineers.
     </p>
+  </section>
 
-    <!-- Contact Info Section -->
-    <div class="contact-info">
-      <h2>About Me</h2>
-      <p>
-        <strong>Name:</strong> Shashidhar Gowda<br>
-        <strong>Email:</strong> <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a><br>
-        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">linkedin.com/in/yourprofile</a><br>
-        <strong>GitHub:</strong> <a href="https://github.com/yourusername" class="contact-link" target="_blank">github.com/yourusername</a>
-      </p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-category">
+      <h3>Cloud & DevOps</h3>
+      <ul>
+        <li>Azure Cloud</li>
+        <li>Azure DevOps</li>
+        <li>Git</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+        <li>Jenkins</li>
+        <li>Ansible</li>
+        <li>Puppet</li>
+        <li>Nagios</li>
+      </ul>
     </div>
+    <div class="skill-category">
+      <h3>Programming & Scripting</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>YAML</li>
+        <li>Linux</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Other</h3>
+      <ul>
+        <li>CI/CD Pipelines</li>
+        <li>Infrastructure as Code</li>
+        <li>Monitoring & Automation</li>
+      </ul>
+    </div>
+  </section>
 
-    <h2>Quick Overview</h2>
-    <ul class="skills-list">
-      <li><strong>Skills:</strong> HTML, CSS, JavaScript, DevOps, Cloud (etc.)</li>
-      <li><strong>Projects:</strong> Showcasing apps, demos, and case studies</li>
-      <li><strong>Cheatsheets:</strong> Fast reference guides for key web topics</li>
-      <li><strong>About:</strong> My background, interests, and profile</li>
-      <li><strong>Contact:</strong> Connect via email or socials</li>
-      <li><strong>Blog:</strong> (Optional) My thoughts, tutorials, and code tips</li>
-      <li><strong>Resume:</strong> Download my CV or view career journey</li>
-    </ul>
-    <div class="menu-quick-links">
-      Quick Links:&nbsp;
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="cheatsheets.html">Cheatsheets</a>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Azure Cloud & DevOps Intern - Intellipaat Software Solutions Pvt. Ltd.</h3>
+      <p class="period">Feb 2025 – Present</p>
+      <ul>
+        <li>Worked on real projects in Azure & DevOps under expert guidance</li>
+        <li>Built scalable solutions with CI/CD and automation</li>
+      </ul>
     </div>
-  </div>
+    <div class="job">
+      <h3>Cloud Application Developer Intern - IBM (with IIT Guwahati)</h3>
+      <p class="period">2024</p>
+      <ul>
+        <li>Worked on scalable cloud applications using IBM Cloud services</li>
+        <li>Collaborated on deployments and monitoring solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:shashidhar.gowda.p@outlook.com">shashidhar.gowda.p@outlook.com</a></p>
+    <p><strong>Phone:</strong> +91 9019884212</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shashidhar-gowda-p" target="_blank">linkedin.com/in/shashidhar-gowda-p</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Shashidhar Gowda P</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
