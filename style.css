@@ -66,15 +66,28 @@ h2 {
   padding-left: 10px;
 }
 
-.skill-category ul, .job ul {
-  list-style: none;
-  margin-left: 1rem;
+/* Skill boxes */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 
-.skill-category ul li::before, .job ul li::before {
-  content: "✔";
-  color: #0078d7;
-  margin-right: 8px;
+.skill-box {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  background: #0078d7;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  background: #0053a0;
 }
 
 .job {
